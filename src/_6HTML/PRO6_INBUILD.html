@@ -1,0 +1,46 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>page1</title>
+</head>
+<body>
+<h2 id="count">0</h2>
+<button id="btn">Increment</button>
+<button id="Decrement">Decrement</button>
+<button id="Reset" >Reset</button>
+
+<script>
+    
+    let a = document.getElementById("count");
+    let b = document.getElementById("btn");
+    let c = document.getElementById("Decrement");
+    let d = document.getElementById("Reset");
+
+    let count=0
+
+    //Increment
+    b.addEventListener("click",function(){
+    count++;
+    a.innerText=count
+    });
+
+    //Decrement
+    c.addEventListener("click",function(){
+    count --;
+    a.innerText=count;
+    });
+
+    //Reset
+    d.addEventListener("click",function(){
+    count=0;
+    a.innerText=count;
+    });
+
+
+
+</script>
+</body>
+</html>

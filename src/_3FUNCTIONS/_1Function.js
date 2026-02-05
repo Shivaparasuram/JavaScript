@@ -34,4 +34,3 @@ x=10;
 y=3;
 B(x,y)
 console.log('\n')
-

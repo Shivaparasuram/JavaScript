@@ -12,7 +12,7 @@ console.log("ANONYMOUS FUNCTION - NO NAME ",a+b);
 a(3,1)
 
 //ARROW FUNCTION
-let z= (t,p)=>console.log("ARROW FUNCTION ",t/p);
+let z= (a,b)=>console.log("ARROW FUNCTION ",a/b);
 z(4,2)
 
 //  ARROW WITH RETURN

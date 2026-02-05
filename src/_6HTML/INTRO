@@ -5,3 +5,6 @@ DOM -- Document Object Model
     GetElementsByTagName    --- elements note s
 It’s commonly used to select multiple elements like <p>, <li>, or even all elements (*) for manipulation
 Store in the array index formate
+
+    INBUILD
+AddEventListener(event,function) --accept click() (event) ,functions (anonymous),

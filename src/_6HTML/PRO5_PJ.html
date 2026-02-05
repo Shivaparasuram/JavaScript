@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Counter</title>
+</head>
+<body>
+<script>
+    let count =0
+    function Increase()
+    {
+    count ++;
+    document.getElementById("cou").innerText=count;
+    }
+
+    function Decrease()
+    {
+    if(count>0)
+    count --;
+    document.getElementById("cou").innerText=count;
+    }
+
+    function Reset()
+    {
+    count=0;
+    document.getElementById("cou").innerText=count;
+    }
+</script>
+<h4 id="cou">0</h4>
+<button onclick="Increase()">Increase !</button>
+<button onclick="Decrease()">Decrease !</button>
+<button onclick="Reset()">Reset !</button>
+
+</body>
+</html>

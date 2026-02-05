@@ -1,0 +1,7 @@
+DOM -- Document Object Model
+-- stored in tree structure (node) -- bridge bw HTML & JS
+
+
+    GetElementByTagName
+It’s commonly used to select multiple elements like <p>, <li>, or even all elements (*) for manipulation
+Store in the array index formate

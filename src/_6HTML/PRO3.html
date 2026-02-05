@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-container {
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            width: 350px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        input:focus {
+            border-color: #007bff;
+            outline: none;
+            box-shadow: 0 0 5px rgba(0,123,255,0.5);
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+
+    <script>
+        function demo() {
+            let name = document.getElementById("name").value;
+            let age = document.getElementById("age").value;
+            let branch = document.getElementById("branch").value;
+            let address = document.getElementById("address").value;
+
+            document.write("<html><head><title>Output</title></head><body>");
+            document.write("<h2>Student Details</h2>");
+            document.write("<p><strong>Name:</strong> " + name + "</p>");
+            document.write("<p><strong>Age:</strong> " + age + "</p>");
+            document.write("<p><strong>Branch:</strong> " + branch + "</p>");
+            document.write("<p><strong>Address:</strong> " + address + "</p>");
+            document.write("</body></html>");
+        }
+    </script>
+</head>
+<body>
+<div class="form-container">
+    <h2>STUDENT FORM</h2>
+    <input id="name" placeholder="Name">
+    <input id="age" placeholder="Age">
+    <input id="branch" placeholder="Branch">
+    <input id="address" placeholder="Address">
+    <button onclick="demo()">Submit</button>
+</div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+FUNCTIONS --reusable block of code that performs a specific task.
+It helps avoid repetition and makes code modular
+
+function expression -- Function inside a variable
+
+anonymous function -- stored in variables -- can be called through variable
+
+Arrow Function -- also known as LAMBDA function
+
+function outside obj is functions   ********
+functions inside obj it is method   ********
+
+THIS -- accesses its own obj attributes
+
+getConfig -- use to define a method working with This keyword
+
+BankAccount -- camel case
+Bank_Account -- snake case

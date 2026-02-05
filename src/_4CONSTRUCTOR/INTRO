@@ -1,0 +1,9 @@
+function outside obj is functions   ********
+functions inside obj it is method   ********
+
+CONSTRUCTOR
+Starts with capital letter
+print output with const name
+
+
+obj is declared by {} or new keyword

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Demo(){
+    let name1 = document.getElementById("name1").value;
+    let password1 =document.getElementById("password1").value;
+
+    if(name1==password1)
+    {
+    document.write("Name & Pass are match !")}
+    else
+    {
+    document.write("Name & Pass are not same match !")}
+
+    }
+
+</script>
+<form>
+    <h3>LOGIN </h3>
+    <label>Name </label>
+    <input id="name1" type="text" placeholder="Enter the name"><br>
+    <label>Pass </label>
+    <input id="password1" type="password" placeholder="Enter the password"><br>
+    <button id ="btn" onclick="Demo()" >Submit !</button>
+</form>
+
+</body>
+</html>

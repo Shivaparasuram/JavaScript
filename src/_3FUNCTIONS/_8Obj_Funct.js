@@ -10,6 +10,7 @@ Trail:function()
     }
 }
 console.log(A.Name);
+console.log(A.Trail())
 
 //OBJ
 

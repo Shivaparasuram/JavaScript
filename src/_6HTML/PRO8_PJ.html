@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DO_LIST</title>
+    <style>
+        /* ===== General Page Styling ===== */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean modern font */
+            background: #f7f9fc; /* Soft pastel background */
+            color: #333; /* Default text color */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 40px;
+        }
+
+        /* ===== Heading Styling ===== */
+        h2 {
+            color: #ff4c4c; /* Bright red heading */
+            font-size: 28px;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 2px #ccc; /* Subtle shadow for depth */
+        }
+
+        /* ===== Input Field Styling ===== */
+        input {
+            padding: 10px;
+            width: 250px;
+            border: 2px solid #6c63ff; /* Violet border */
+            border-radius: 6px;
+            outline: none;
+            font-size: 14px;
+            margin-right: 10px;
+            transition: 0.3s; /* Smooth hover/focus effect */
+        }
+
+        input:focus {
+            border-color: #00b894; /* Mint green highlight on focus */
+            box-shadow: 0 0 6px rgba(0, 184, 148, 0.5);
+        }
+
+        /* ===== Button Styling ===== */
+        button {
+            padding: 10px 18px;
+            background: #6c63ff; /* Violet background */
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #00b894; /* Mint green hover */
+        }
+
+        /* ===== List Styling ===== */
+        ul {
+            list-style: none; /* Remove default bullets */
+            padding: 0;
+            margin-top: 20px;
+            width: 300px;
+        }
+
+        li {
+            background: #ffffff; /* White card style */
+            padding: 12px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+            border-left: 5px solid #6c63ff; /* Violet accent bar */
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        li:hover {
+            background: #f1f2f6; /* Light gray hover effect */
+        }
+
+        /* ===== Completed Task Styling ===== */
+        li.done {
+            text-decoration: line-through; /* Strike-through text */
+            color: gray;
+            background: #dfe6e9; /* Muted background */
+            border-left: 5px solid #00b894; /* Green accent for completed */
+        }
+    </style>
+</head>
+<body>
+<h2>THE TO DO LIST !!</h2>
+
+<!-- Input field for new tasks -->
+<input id="in" placeholder="Enter Pending Tasks !">
+
+<!-- Button to add tasks -->
+<button id="btn">Add !</button>
+
+<!-- Unordered list to hold tasks -->
+<ul id="ul"></ul>
+
+<script>
+    // ===== Get references to DOM elements =====
+    let input1 = document.getElementById("in");
+    let btn1 = document.getElementById("btn");
+    let ul1 = document.getElementById("ul");
+
+    // ===== Event listener for Add button =====
+    btn1.addEventListener("click", function() {
+        let Data = input1.value; // Get input value
+
+        // Prevent adding empty tasks
+        if (Data === "") return;
+
+        // Create new list item
+        let li = document.createElement("li");
+        li.textContent = Data;
+
+        // Toggle "done" class when clicked
+        li.addEventListener("click", function() {
+            li.classList.toggle("done");
+        });
+
+        // Append new task to list
+        ul1.appendChild(li);
+
+        // Clear input field after adding
+        input1.value = "";
+    });
+</script>
+</body>
+</html>

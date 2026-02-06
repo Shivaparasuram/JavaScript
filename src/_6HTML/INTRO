@@ -7,4 +7,10 @@ It’s commonly used to select multiple elements like <p>, <li>, or even all ele
 Store in the array index formate
 
     INBUILD
-AddEventListener(event,function) --accept click() (event) ,functions (anonymous),
+AddEventListener(event,function) --accept click() (event),onmouseover (event) ,functions (anonymous),
+
+    EVENT
+click ()  -- we need to click for event to work
+onMouseOver () -- move the mouse over the data it will perform event -- till only curser on image
+onmouseout () -- still reflect evn after the curser is out of image
+

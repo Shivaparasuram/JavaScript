@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OnMouseOver !</title>
+    <style>
+        #bird {
+          width: 300px;
+          transition: opacity 0.3s ease; /* smooth fade */
+        }
+
+        /* When hovered, swap the image */
+        #bird:hover {
+          content: url("https://tinyurl.com/vaec7b5a");
+        }
+    </style>
+
+</head>
+<body>
+<img id="bird" onmouseover="Bird()" onmouseout="Bird2()" src="https://tinyurl.com/mpzr52wu" width="300">
+
+<script>
+    function Bird()
+    {
+    document.getElementById("bird").src="https://tinyurl.com/vaec7b5a"
+    }
+
+    function Bird2()
+    {
+    document.getElementById("bird").src="https://cdn.cosmos.so/da44505e-3ebc-4c9f-8594-f25aed8ddc9a?format=jpeg"
+    }
+
+</script>
+</body>
+</html>

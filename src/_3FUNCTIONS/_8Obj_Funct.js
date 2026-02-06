@@ -3,7 +3,7 @@
 let A=
 {
 Name:"Dude !",
-Score:99,
+Score:55,
 Trail:function()
     {
     return this.Name;

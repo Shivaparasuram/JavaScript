@@ -3,7 +3,8 @@ It helps avoid repetition and makes code modular
 
 function expression -- Function inside a variable
 
-anonymous function -- stored in variables -- can be called through variable
+anonymous function --doesn't have identifier name -- stored in variables
+-- can be called through variable
 
 Arrow Function -- also known as LAMBDA function
 

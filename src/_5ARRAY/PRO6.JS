@@ -11,3 +11,4 @@ console.log(b,c)    // We are
 let z= "AMBIKA !".split("");
 
 console.log(z);
+console.log(z.splice(0,1,0))

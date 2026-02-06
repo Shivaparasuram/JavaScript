@@ -6,7 +6,7 @@ array.pop()
 console.log(array)
 
 //Delete element from Front
-array.shift(10)
+array.shift()
 console.log("Delete from front",array)
 
 //Insert element from Front
@@ -17,5 +17,5 @@ console.log("Insert from front",array)
 array.splice(2,2)
 console.log(array)
 
-array.splice(2,1,10,100,1000)
+array.splice(2,1,00,100,1000)
 console.log(array)

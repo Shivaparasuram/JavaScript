@@ -58,22 +58,6 @@
         }
     </style>
 
-    <script>
-        function demo() {
-            let name = document.getElementById("name").value;
-            let age = document.getElementById("age").value;
-            let branch = document.getElementById("branch").value;
-            let address = document.getElementById("address").value;
-
-            document.write("<html><head><title>Output</title></head><body>");
-            document.write("<h2>Student Details</h2>");
-            document.write("<p><strong>Name:</strong> " + name + "</p>");
-            document.write("<p><strong>Age:</strong> " + age + "</p>");
-            document.write("<p><strong>Branch:</strong> " + branch + "</p>");
-            document.write("<p><strong>Address:</strong> " + address + "</p>");
-            document.write("</body></html>");
-        }
-    </script>
 </head>
 <body>
 <div class="form-container">
@@ -84,5 +68,21 @@
     <input id="address" placeholder="Address">
     <button onclick="demo()">Submit</button>
 </div>
+<script>
+    function demo() {
+        let name = document.getElementById("name").value;
+        let age = document.getElementById("age").value;
+        let branch = document.getElementById("branch").value;
+        let address = document.getElementById("address").value;
+
+        document.write("<html><head><title>Output</title></head><body>");
+        document.write("<h2>Student Details</h2>");
+        document.write("<p><strong>Name:</strong> " + name + "</p>");
+        document.write("<p><strong>Age:</strong> " + age + "</p>");
+        document.write("<p><strong>Branch:</strong> " + branch + "</p>");
+        document.write("<p><strong>Address:</strong> " + address + "</p>");
+        document.write("</body></html>");
+    }
+</script>
 </body>
 </html>

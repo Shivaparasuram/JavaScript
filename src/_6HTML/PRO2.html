@@ -5,21 +5,7 @@
     <title>Title</title>
 </head>
 <body>
-<script>
-    function Demo(){
-    let name1 = document.getElementById("name1").value;
-    let password1 =document.getElementById("password1").value;
 
-    if(name1==password1)
-    {
-    document.write("Name & Pass are match !")}
-    else
-    {
-    document.write("Name & Pass are not same match !")}
-
-    }
-
-</script>
 <form>
     <h3>LOGIN </h3>
     <label>Name </label>
@@ -28,6 +14,23 @@
     <input id="password1" type="password" placeholder="Enter the password"><br>
     <button id ="btn" onclick="Demo()" >Submit !</button>
 </form>
+
+<script>
+    function Demo(){
+    let name1 = document.getElementById("name1").value;
+    let password1 =document.getElementById("password1").value;
+
+    if(name1==password1)
+    {
+    document.write("Name "+name1+" & DT is"+ typeof name1+ " Pass are match ! "+password1+ " & DT is "+typeof password1)}
+    else
+    {
+    document.write("Name & Pass are not same match !")}
+
+    }
+
+</script>
+
 
 </body>
 </html>

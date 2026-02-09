@@ -4,7 +4,7 @@ console.log(a,b ,c,e,f,g)
 console.log(typeof a)
 console.log(array)
 
-//x is value y is rest all value
+//x is value y is reast all value
 let [x,...y] = array
 console.log(x,y)
 

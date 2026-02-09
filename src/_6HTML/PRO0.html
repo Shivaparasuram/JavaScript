@@ -2,11 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Easy Example</title>
 </head>
 <body>
+
+<!-- Heading that will change -->
+<h2 id="myHeading">Original Text</h2>
+
+<!-- Button that runs the function when clicked -->
+<button onclick="showAlert()">Click Me!</button>
+
 <script>
-    document.write("Hello World")
+    function showAlert() {
+      // Get the heading element
+      let heading = document.getElementById("myHeading");
+
+      // Change its text
+      heading.innerHTML = "New text here!";
+
+      // Show an alert with the new text
+      alert("The heading now says: " + heading.innerHTML);
+
+    }
 </script>
+
 </body>
 </html>

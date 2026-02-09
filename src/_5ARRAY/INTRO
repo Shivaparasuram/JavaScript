@@ -27,7 +27,7 @@ filter and create new array as op
     MAP()               - 100********************************8000000000000000000
 key value pair
 create new array similar to foreach
-manipulate the filtered elements
+manipulate the filtered elements like mult,add or sub
 
     REDUCE()            - 100********************************8000000000000000000
 returns only one output

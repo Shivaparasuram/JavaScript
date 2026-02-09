@@ -18,7 +18,7 @@
 
         /* ===== Heading Styling ===== */
         h2 {
-            color: #ff4c4c; /* Bright red heading */
+            color: #ff4c4d; /* Bright red heading */
             font-size: 28px;
             margin-bottom: 20px;
             text-shadow: 1px 1px 2px #ccc; /* Subtle shadow for depth */
@@ -106,9 +106,9 @@
     let btn1 = document.getElementById("btn");
     let ul1 = document.getElementById("ul");
 
-    // ===== Event listener for Add button =====
-    btn1.addEventListener("click", function() {
-        let Data = input1.value; // Get input value
+    // ===== Function to add tasks =====
+    function addTask() {
+        let Data = input1.value.trim(); // Get input value and trim spaces
 
         // Prevent adding empty tasks
         if (Data === "") return;
@@ -127,7 +127,18 @@
 
         // Clear input field after adding
         input1.value = "";
+    }
+
+    // ===== Event listener for Add button =====
+    btn1.addEventListener("click", addTask);
+
+    // ===== Event listener for Enter key =====
+    input1.addEventListener("keydown", function(event) {
+        if (event.key === "Enter") {
+            addTask();
+        }
     });
 </script>
+
 </body>
 </html>

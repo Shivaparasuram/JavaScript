@@ -8,12 +8,16 @@ let Product =
 sum =0;
 for (let i=0;i<Product.length;i++)
     {
-    sum =sum+Product[i].Price;
+    if (Product[i].Name === "Mojito" || Product[i].Name === "Pizza")
+    {sum =sum+Product[i].Price;}
+
     }
-console.log("Sum of ALl Products is ",sum,"/-")
+console.log("Sum of Mojito & Pizza Products is ",sum,"/-")
 avg=0;
+sum1=0;
 for (let i=0;i<Product.length;i++)
     {
-    avg=sum/Product.length;
+    sum1 =sum1+Product[i].Price;
+    avg=sum1/Product.length;
     }
 console.log("Avg of ALl Products is ",avg,"/-")

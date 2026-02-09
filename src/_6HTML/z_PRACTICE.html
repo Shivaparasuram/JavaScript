@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h2 id="H2">0</h2>
+<button id="1" onclick="A()">++</button>
+<button id="2" onclick="B()">--</button>
+<button id="3" onclick="C()">0</button>
+
+
+<script>
+
+
+
+    let count =0
+    function A()
+    {
+    count ++;
+    document.getElementById("H2").innerText=count;
+    }
+
+    function B()
+    {
+    if(count > 0){ count --;}
+    document.getElementById("H2").innerText=count;
+    }
+
+    function C()
+    {
+    document.getElementById("H2").innerText=0;
+    }
+
+
+
+</script>
+</body>
+</html>

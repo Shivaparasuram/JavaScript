@@ -5,15 +5,6 @@
     <title>GetByTag</title>
 </head>
 <body>
-<script>
-    function Demo()
-    {
-    let a=document.getElementsByTagName("p");
-    for (let i=0;i<a.length;i++)
-    { a[i].style.color="gold";}
-    }
-
-</script>
 
 <p>One</p>
 <p>two</p>
@@ -22,6 +13,20 @@
 <p>five</p>
 <p>six</p>
 <button onclick=" Demo()">Submit</button>
+
+<script>
+    function Demo()
+    {
+    let a=document.getElementsByTagName("p");
+    for (let i=0;i<a.length;i++)
+    {
+    a[i].style.color="gold";
+    }
+    }
+
+</script>
+
+
 
 </body>
 </html>

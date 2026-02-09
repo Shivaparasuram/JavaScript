@@ -1,5 +1,12 @@
-DOM -- Document Object Model
+DOM -- Document Object Model -- when web page is loaded  browser create a dom file of tht page
 -- stored in tree structure (node) -- bridge bw HTML & JS
+
+window -- default -- contain everything
+console.log() //for dom tags
+console.dir() //print object and documents
+
+    TREE
+WINDOW -- DOCUMENT(DOM) --HTML --1 BODY 2HEAD
 
 
     GetElementsByTagName    --- elements note s
